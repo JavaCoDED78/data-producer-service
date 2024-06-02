@@ -20,24 +20,28 @@ public class TestDataServiceImpl implements TestDataService {
     @Override
     public void sendMessages(DataTestOptions testOptions) {
         if (testOptions.getMeasurementTypes().length > 0) {
-            executorService.scheduleAtFixedRate(() -> {
-                Data data = new Data();
-                data.setSensorId(
-                        (long) getRandomNumber(1, 10)
-                );
-                data.setMeasuredValue(
-                        getRandomNumber(15, 20)
-                );
-                data.setMeasurementType(
-                        getRandomMeasurement(
-                                testOptions.getMeasurementTypes()
-                        )
-                );
-                data.setTimestamp(
-                        LocalDateTime.now()
-                );
-                kafkaDataService.send(data);
-            }, 0, testOptions.getDelayInSeconds(), TimeUnit.SECONDS);
+            executorService.scheduleAtFixedRate(
+                    () -> {
+                        Data data = new Data();
+                        data.setSensorId(
+                                (long) getRandomNumber(1, 10)
+                        );
+                        data.setMeasuredValue(
+                                getRandomNumber(15, 20)
+                        );
+                        data.setMeasurementType(
+                                getRandomMeasurement(
+                                        testOptions.getMeasurementTypes()
+                                )
+                        );
+                        data.setTimestamp(
+                                LocalDateTime.now()
+                        );
+                        kafkaDataService.send(data);
+                    }, 0,
+                    testOptions.getDelayInSeconds(),
+                    TimeUnit.SECONDS
+            );
         }
     }
 
