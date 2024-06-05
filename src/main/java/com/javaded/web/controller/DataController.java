@@ -18,9 +18,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class DataController {
 
-    public final KafkaDataService kafkaDataService;
+    private final KafkaDataService kafkaDataService;
     private final TestDataService testDataService;
-    public  final DataMapper dataMapper;
+    private final DataMapper dataMapper;
     private final DataTestOptionsMapper dataTestOptionsMapper;
 
     @PostMapping("/send")

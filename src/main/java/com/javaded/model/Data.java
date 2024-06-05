@@ -13,7 +13,7 @@ public class Data {
 
     private Long sensorId;
     private LocalDateTime timestamp;
-    private Double measuredValue;
+    private double measurement;
     private MeasurementType measurementType;
 
     public enum MeasurementType {

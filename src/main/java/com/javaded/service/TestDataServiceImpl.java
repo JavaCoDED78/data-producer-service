@@ -26,7 +26,7 @@ public class TestDataServiceImpl implements TestDataService {
                         data.setSensorId(
                                 (long) getRandomNumber(1, 10)
                         );
-                        data.setMeasuredValue(
+                        data.setMeasurement(
                                 getRandomNumber(15, 20)
                         );
                         data.setMeasurementType(
@@ -38,7 +38,8 @@ public class TestDataServiceImpl implements TestDataService {
                                 LocalDateTime.now()
                         );
                         kafkaDataService.send(data);
-                    }, 0,
+                    },
+                    0,
                     testOptions.getDelayInSeconds(),
                     TimeUnit.SECONDS
             );
