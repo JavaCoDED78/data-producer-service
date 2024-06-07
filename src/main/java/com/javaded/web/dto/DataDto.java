@@ -13,7 +13,7 @@ public record DataDto(
         @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss")
         LocalDateTime timestamp,
 
-        Double measuredValue,
+        double measurement,
         Data.MeasurementType measurementType
 ) {
 

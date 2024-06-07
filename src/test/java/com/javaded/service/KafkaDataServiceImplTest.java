@@ -79,7 +79,7 @@ public class KafkaDataServiceImplTest {
                 .sensorId(1L)
                 .timestamp(LocalDateTime.now())
                 .measurementType(Data.MeasurementType.POWER)
-                .measuredValue(15D)
+                .measurement(15D)
                 .build();
 
         Awaitility.await()
