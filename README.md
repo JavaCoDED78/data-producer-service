@@ -1,5 +1,6 @@
 # Data generator microservice
 
+[![codecov](https://codecov.io/gh/JavaCoDED78/data-producer-service/graph/badge.svg?token=WZEI19MKK2)](https://codecov.io/gh/JavaCoDED78/data-producer-service)
 
 This application produces data and sends it to [Data analyser service](https://github.com/JavaCoDED78/data-analyser-service) with Apache Kafka.
 
