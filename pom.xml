@@ -28,7 +28,7 @@
         <checkstyle.version>3.4.0</checkstyle.version>
         <jacoco.version>0.8.12</jacoco.version>
         <rest-assured.version>5.5.0</rest-assured.version>
-        <awaitility.version>4.2.1</awaitility.version>
+        <awaitility.version>4.2.2</awaitility.version>
     </properties>
 
     <dependencies>
