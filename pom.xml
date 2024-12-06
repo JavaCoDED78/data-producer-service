@@ -22,7 +22,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <mapstruct.version>1.6.3</mapstruct.version>
         <spring-kafka.version>3.2.4</spring-kafka.version>
-        <xml.version>0.30.1</xml.version>
+        <xml.version>0.32.0</xml.version>
         <reactor-kafka.version>1.3.22</reactor-kafka.version>
         <xml-format.version>4.0.1</xml-format.version>
         <checkstyle.version>3.6.0</checkstyle.version>
