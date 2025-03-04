@@ -27,7 +27,7 @@
         <xml-format.version>4.0.1</xml-format.version>
         <checkstyle.version>3.6.0</checkstyle.version>
         <jacoco.version>0.8.12</jacoco.version>
-        <rest-assured.version>5.5.0</rest-assured.version>
+        <rest-assured.version>5.5.1</rest-assured.version>
         <awaitility.version>4.2.2</awaitility.version>
     </properties>
 
